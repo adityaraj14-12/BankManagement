@@ -1,0 +1,82 @@
+/* src/components/HomePage.css */
+
+/* Add a vibrant 3D colorful gradient effect to the title */
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #FF6A00, #FFD700, #FF1493, #00BFFF, #32CD32);
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 4s ease-in-out infinite;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+  }
+  
+  /* Apply animation for gradient effect */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Styling for the buttons with gradient backgrounds and hover animations */
+  button {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Login button - with colorful gradient and hover effects */
+  .login-btn {
+    font-size: 16px;
+    padding: 16px 32px;
+    background: linear-gradient(45deg, #FF6A00, #FFD700);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-btn:hover {
+    background: linear-gradient(45deg, #FF1493, #00BFFF);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Register button - with outlined border and gradient hover effects */
+  .register-btn {
+    font-size: 16px;
+    padding: 16px 32px;
+    color: #FF6A00;
+    border: 3px solid #FF6A00;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background: linear-gradient(45deg, #FF6A00, #FFD700);
+    color: white;
+    border-color: #FFD700;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Container for buttons */
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Page Background and Animation */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  

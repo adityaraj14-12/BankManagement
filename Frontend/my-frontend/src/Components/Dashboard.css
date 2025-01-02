@@ -1,0 +1,46 @@
+/* src/components/Dashboard.css */
+
+/* Dashboard page heading style */
+.dashboard-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2C3E50;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Subheading style */
+  .dashboard-subheading {
+    font-size: 2rem;
+    color: #34495E;
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling for the dashboard */
+  .dashboard-btn {
+    background: linear-gradient(45deg, #1E90FF, #00BFFF);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 12px 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dashboard-btn:hover {
+    background: linear-gradient(45deg, #FF6347, #FF4500);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Paper card style for account details */
+  .MuiPaper-root {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiTypography-root {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,185 @@
+/* Register.css */
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Container for Form */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #00A8E8);
+  }
+  
+  .form-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 50px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1.form-heading {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input Fields Styling */
+  .input-groupregister {
+    position: relative;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #005B8A;
+    outline: none;
+    background-color: #e9f5fc;
+  }
+  
+  /* Error messages */
+  .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    padding-left: 10px;
+    font-weight: bold;
+    animation: slideInError 0.5s ease-in-out;
+  }
+  
+  @keyframes slideInError {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Placeholder */
+  input::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    padding: 16px;
+    background-color: #005B8A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 1s infinite;
+  }
+  
+  .submit-btn:hover {
+    background-color: #004563;
+  }
+  
+  /* Button Hover Effect */
+  .submit-btn:active {
+    background-color: #003451;
+  }
+  
+  /* Text Linking */
+  .switch-form-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .switch-form-text a {
+    color: #005B8A;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .switch-form-text a:hover {
+    color: #003366;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .form-wrapper {
+      padding: 30px;
+    }
+  
+    .submit-btn {
+      font-size: 16px;
+    }
+  
+    h1.form-heading {
+      font-size: 24px;
+    }
+  }
+  
